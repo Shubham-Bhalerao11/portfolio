@@ -359,11 +359,12 @@
                  <strong>Location:</strong> Pune, India
                </div>
              </div>
-             <form onsubmit="event.preventDefault(); alert('Message sent! (Demo)')">
+             
+             <form action="https://formspree.io/f/manvebog" method="POST">
                <input type="text" placeholder="Name" required>
-               <input type="email" placeholder="Email" required>
-               <textarea rows="4" placeholder="Tell me about your project..."></textarea>
-               <button class="btn btn-primary" style="width:100%">Send Message</button>
+               <input type="email" placeholder="Email" name="_replyto" required>
+               <textarea rows="4" placeholder="Tell me about your project..." name="message"></textarea>
+               <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
              </form>
           </div>
         </section>
